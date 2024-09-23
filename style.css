@@ -1,0 +1,129 @@
+/* .div-1{
+background-color: rgb(187, 225, 120);
+color:rgb(73, 92, 40);
+} */
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(187, 225, 120);
+    height: 85px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header  i:first-child {
+    margin-right: 450px; /* Відступ між іконкою і заголовком */
+    font-size: 40px ;
+    transition: transform 0.3s ease; /* Додає плавний ефект при збільшенні */
+}
+
+.header i:last-child{
+    margin-left: 430px; /* Відступ між іконкою і заголовком */
+    font-size: 40px ;
+    transition: transform 0.3s ease; /* Додає плавний ефект при збільшенні */
+
+}
+
+.header i:hover {
+    transform: scale(1.2); /* Збільшує іконку на 20% при наведенні */
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+    font-family: cursive;
+    margin: 0;
+    color: rgb(73, 92, 40);
+}
+
+
+.div-1 img {
+    width: 100%;
+    height: auto; /* Зберігає пропорції зображення */
+    display: block; /* Усуває відступи під зображенням */
+    filter: brightness(80%);
+}
+.rectangle{
+    width: auto;
+    height: 30px;
+    background-color:rgb(73, 92, 40);
+}
+
+h2{
+    height: 45px;
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    margin: auto; 
+    padding-top: 10px; 
+    padding-bottom: 20px;  
+    background-color:rgb(187, 225, 120) ;
+    color:rgb(73, 92, 40);
+}
+
+.div-2 {
+    display: flex;
+    gap: 25px;
+    background-color: rgb(187, 225, 120);
+    justify-content: center; /* Центрує зображення всередині контейнера */
+}
+
+.div-3 {
+    display: flex;
+    gap: 25px;
+    background-color: rgb(187, 225, 120);
+    justify-content: center; /* Центрує зображення всередині контейнера */
+    padding-top: 20px; /* Відступ між .div-2 і .div-3 */
+    padding-bottom: 30px;
+}
+
+.div-2 img, .div-3 img {
+    width: 15%; /* Встановіть відповідний розмір */
+    height: auto;
+    box-sizing: border-box; /* Включає padding і border в загальний розмір */
+    margin: 0; /* Видалити зайві відступи */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Додає плавний ефект збільшення 
+    та тіні */
+}
+.div-2 img:hover, .div-3 img:hover {
+    transform: scale(1.1); /* Збільшує зображення на 10% при наведенні */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.576); /* Додає тінь до зображення */
+}
+.rectangle2{
+    width: auto;
+    height: 40px;
+    background-color:rgb(73, 92, 40);
+}
+
+h3{
+    height: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    margin: auto;
+    padding-top: 15px;
+    background-color:rgb(187, 225, 120) ;
+    color:rgb(73, 92, 40);   
+}
+
+.end img:hover{
+    transform: scale(1.1); /* Збільшує зображення на 10% при наведенні */
+
+}
+
+.end{
+    background-color:rgb(187, 225, 120) ;
+    text-align: center; /* Центрує зображення по горизонталі */
+    padding: 20px; /* Додає відступи навколо вмісту */
+
+}
+
+.end img {
+    width: 15%; /* Зменшує зображення до 50% ширини контейнера */
+    height: auto; /* Зберігає пропорції зображення */
+    display: inline-block; /* Забезпечує коректне центрування */
+    filter: brightness(80%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Додає плавний ефект збільшення 
+    та тіні */
+}
