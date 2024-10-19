@@ -1,0 +1,300 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(187, 225, 120);
+    height: 85px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header  i:first-child {
+    margin-right: 450px; /* Відступ між іконкою і заголовком */
+    font-size: 40px ;
+    transition: transform 0.3s ease; /* Додає плавний ефект при збільшенні */
+}
+
+.header i:last-child{
+    margin-left: 430px; /* Відступ між іконкою і заголовком */
+    font-size: 40px ;
+    transition: transform 0.3s ease; /* Додає плавний ефект при збільшенні */
+
+}
+
+.header i:hover {
+    transform: scale(1.2); /* Збільшує іконку на 20% при наведенні */
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+    font-family: cursive;
+    margin: 0;
+    color: rgb(73, 92, 40);
+}
+
+
+.div-1 img {
+    width: 100%;
+    height: auto; /* Зберігає пропорції зображення */
+    display: block; /* Усуває відступи під зображенням */
+    filter: brightness(80%);
+}
+.rectangle{
+    width: auto;
+    height: 30px;
+    background-color:rgb(73, 92, 40);
+}
+
+h2{
+    height: 45px;
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    margin: auto; 
+    padding-top: 10px; 
+    padding-bottom: 20px;  
+    background-color:rgb(187, 225, 120) ;
+    color:rgb(73, 92, 40);
+}
+
+.div-2 {
+    display: flex;
+    gap: 25px;
+    background-color: rgb(187, 225, 120);
+    justify-content: center; /* Центрує зображення всередині контейнера */
+}
+
+.div-3 {
+    display: flex;
+    gap: 25px;
+    background-color: rgb(187, 225, 120);
+    justify-content: center; /* Центрує зображення всередині контейнера */
+    padding-top: 20px; /* Відступ між .div-2 і .div-3 */
+    padding-bottom: 30px;
+}
+
+.div-2 img, .div-3 img {
+    width: 15%; /* Встановіть відповідний розмір */
+    height: auto;
+    box-sizing: border-box; /* Включає padding і border в загальний розмір */
+    margin: 0; /* Видалити зайві відступи */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Додає плавний ефект збільшення 
+    та тіні */
+}
+.div-2 img:hover, .div-3 img:hover {
+    transform: scale(1.1); /* Збільшує зображення на 10% при наведенні */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.576); /* Додає тінь до зображення */
+}
+.rectangle2{
+    width: auto;
+    height: 40px;
+    background-color:rgb(73, 92, 40);
+}
+
+h3{
+    height: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    margin: auto;
+    padding-top: 15px;
+    background-color:rgb(187, 225, 120) ;
+    color:rgb(73, 92, 40);   
+}
+
+.end img:hover{
+    transform: scale(1.1); /* Збільшує зображення на 10% при наведенні */
+
+}
+
+.end{
+    background-color:rgb(187, 225, 120) ;
+    text-align: center; /* Центрує зображення по горизонталі */
+    padding: 20px; /* Додає відступи навколо вмісту */
+
+}
+
+.end img {
+    width: 15%; /* Зменшує зображення до 50% ширини контейнера */
+    height: auto; /* Зберігає пропорції зображення */
+    display: inline-block; /* Забезпечує коректне центрування */
+    filter: brightness(80%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Додає плавний ефект збільшення 
+    та тіні */
+}
+
+h4{
+    text-align: center;
+    font-size: 55px;
+    font-family: cursive;
+    margin: 0;
+    color: rgb(39, 49, 22);
+
+
+}
+
+/* Затемнення фону */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Напівпрозорий чорний фон */
+    display: none; /* Спочатку приховано */
+    z-index: 1;
+  }
+  
+  /* Стиль для форми входу */
+  .login-form-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.36);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    display: none; /* Спочатку приховано */
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.576); /* Додає тінь  */
+
+  }
+  
+  .login-screen {
+    text-align: center;
+  }
+  
+  /* Стиль для кнопки закриття */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 121px;
+    border: 2px solid rgb(73, 92, 40);
+    border-radius: 15px;
+    background-color:rgb(187, 225, 120) ;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: rgb(73, 92, 40);
+    border-color: rgb(187, 225, 120);
+  }
+  
+/* Оформлення для всіх полів введення з класом .login-field */
+.login-field {
+    width: 250px; /* Ширина поля */
+    padding: 10px 15px; /* Внутрішні відступи */
+    margin: 10px auto; /* Зовнішні відступи для рівномірного розміщення */
+    display: block; /* Встановлення блочного рівня для коректного центрування */
+    border: 2px solid rgb(73, 92, 40); /* Зовнішня рамка синього кольору */
+    border-radius: 15px; /* Заокруглення кутів */
+    box-shadow: 0 4px 10px rgba(63, 63, 63, 0.583); /* Тінь для полів */
+    font-size: 16px; /* Розмір тексту */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Плавний ефект при зміні рамки */
+  }
+  
+  /* Зміна кольору рамки та тіні при фокусі */
+  .login-field:focus {
+    border: 2px solid rgb(73, 92, 40); /* Зміна кольору рамки при фокусі */
+    box-shadow: 0 0 8px rgb(112, 140, 62); /* Зміна тіні при фокусі */
+  }
+  
+
+ /* Початковий стан меню - сховане зліва за екраном */
+nav#slide-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Приховуємо меню за лівою межею екрану */
+    bottom: 0;
+    width: 250px;
+    background-color: #495c28;
+    color: rgb(187, 225, 120);
+    transition: left 0.3s ease; /* Анімація зміни положення меню */
+    padding-top: 60px;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.576); /* Додає тінь  */
+
+
+
+}
+
+nav#slide-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav#slide-menu ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    position: relative; /* Для правильного позиціонування підменю */
+}
+
+nav#slide-menu ul li:hover {
+    background-color: #3b4a22;
+}
+
+/* Стиль для активного стану (коли меню відкрите) */
+body.menu-active nav#slide-menu {
+    left: 0; /* Відкритий стан меню */
+}
+
+body.menu-active {
+    overflow: hidden; /* Заблокувати прокручування сторінки при активному меню */
+}
+
+/* Стиль для кнопки меню */
+.menu-trigger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 10;
+    background-color: transparent; /* Невидимий фон кнопки */
+    padding: 10px; /* Внутрішні відступи кнопки */
+}
+
+/* Затемнення фону (overlay) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Напівпрозорий чорний фон */
+    display: none; /* Спочатку приховано */
+    z-index: 1;
+}
+
+/* При активному меню overlay буде видимим */
+body.menu-active .overlay {
+    display: block;
+}
+
+nav#slide-menu ul .submenu {
+    max-height: 0; /* Сховати підменю */
+    opacity: 0; /* Сховати підменю */
+    overflow: hidden; /* Приховати перевищення */
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Плавний перехід */
+}
+
+nav#slide-menu ul .submenu.show {
+    max-height: 200px; /* Встановіть максимальну висоту для підменю */
+    opacity: 1; /* Показати підменю */
+}
+
+/* Стиль для активного стану (коли меню відкрите) */
+body.menu-active nav#slide-menu {
+    left: 0; /* Відкритий стан меню */
+}
